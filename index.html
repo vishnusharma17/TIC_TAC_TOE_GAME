@@ -4,55 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<style>
-    *{
-        margin:0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-    body{
-        background-color: #548687;
-        text-align: center;
-    }
-    .container{
-        height:600px;
-        width:600px;
-        /* border: 1px solid white; */
-        margin:auto;
-        /* padding:10px; */
-    }
-    .game{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .box{
-        font-size: 100px;
-        border: 1px solid white;
-        width:200px;
-        height:200px;
-        border-radius: 10px;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
-    #reset{
-        width:100px;
-        height:50px;
-        border-radius: 10px;
-        margin: 20px auto;
-    }
-    .disabled {
-    pointer-events: none;
-    opacity: 0.6;
-}
-#h2{
-    margin: 20px;
-    color: blue;
-}
-</style>
 <body>
-    <main>
+    <main class="main-container">
         <h1> TIC TAC TOE GAME </h1>
         <h2 id="h2"> </h2>
         <div class="container">
@@ -67,9 +22,8 @@
                 <div class="box"></div>
                 <div class="box"></div>
             </div>
+            <button id="reset">reset</button>
         </main>
-
-        <button id="reset">reset</button>
         <script>
             let rst = document.querySelector("#reset");
             let h2 = document.querySelector("#h2");
