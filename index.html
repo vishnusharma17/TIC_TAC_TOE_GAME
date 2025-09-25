@@ -34,9 +34,13 @@
                 box.addEventListener("click",()=>{
                     if(turNo){
                         box.innerText = "O";
+                        box.style.background = "yellow";
+                        box.style.color = "white";
                         turNo = false;
                     }else{
                         box.innerText = "X";
+                        box.style.background = "red";
+                        box.style.color = "white";
                         turNo = true;
                     }
                     box.classList.add("disabled");
@@ -46,12 +50,14 @@
             rst.addEventListener("click",()=>{
                 boxes.forEach((box)=>{
                     box.innerText = "";
+                    h2.innerText ="";
                     box.classList.remove("disabled");
+                    box.style.background = "";
+                    box.style.color = "";
                 })
             })
             function checkWinner(){
                 for(ptr of arr){
-                    
             let ptr1 = boxes[ptr[0]].innerText;
             let ptr2 =boxes[ptr[1]].innerText;
             let ptr3 =boxes[ptr[2]].innerText;
