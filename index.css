@@ -24,12 +24,13 @@
         margin:auto;
         display: flex;
         flex-wrap: wrap;
+        /* border: 1px solid red; */
     }
     .box{
-        font-size: 50px;
+        /* font-size:50px; */
         border: 1px solid white;
-        width:33.33%;
-        height:133.33px;
+        width: calc(33.33% - 10px);
+        /* height:133.33px; */
         border-radius: 10px;
         text-align: center;
         align-items: center;
@@ -54,14 +55,12 @@
 @media (min-width:0px) and (max-width:762px){
     .box{
         width:calc(33% - 10px);
-        height:133.33px;
         flex-grow: 1;
     }
 }
 @media (min-width:762px) and (max-width:1200px){
     .box{
         width:calc(33% - 10px);
-        height:calc(133.27px - 20px);
         flex-grow: 1;
     }
 }
